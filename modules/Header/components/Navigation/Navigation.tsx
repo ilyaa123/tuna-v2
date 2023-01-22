@@ -1,0 +1,21 @@
+import Link from "next/link";
+import { FC } from "react";
+
+import style from './Navigation.module.scss';
+
+export const Navigation:FC = () => {
+
+    return (
+        <ul className={style.Navigation}>
+            <li className={style.Navigation__item}>
+                <Link href="/">Проекты</Link>
+            </li>
+            <li className={style.Navigation__item}>
+                <Link href="/">Вакансии</Link>
+            </li>
+            <li className={style.Navigation__item}>
+                <Link href="/">О нас</Link>
+            </li>
+        </ul>
+    )
+}

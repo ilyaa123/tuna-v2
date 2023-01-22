@@ -1,0 +1,36 @@
+.Main{
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+    &__content{
+        h1{
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 130%;
+            color: #274B90;
+            margin-bottom: 40px;
+            span{
+                color: #0C8771;
+            }
+        }
+        p{
+            max-width: 450px;
+            font-size: 16px;
+            line-height: 160%;
+            color: #505864;
+            margin-bottom: 40px; 
+        }
+    }
+    &__image{
+        max-width: 540px;
+        width: 100%;
+        height: auto;
+        &_img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

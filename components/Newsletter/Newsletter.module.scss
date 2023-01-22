@@ -1,0 +1,50 @@
+.Newsletter{
+    padding: 100px 0;
+    &__content{
+        max-width: 784px;
+        width: 100%;
+        margin: 0 auto;
+        background: #274B90;
+        border-radius: 16px;
+        padding: 36px 0;
+        h3{
+            max-width: 410px;
+            width: 100%;
+            margin: 0 auto;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 130%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 36px;
+        }
+    }
+    &__form{
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 10px 24px;
+        max-width: 452px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__input{
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #8593A7;
+        width: 100%;
+    }
+    &__button{
+        background: #305DB4;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;        
+    }
+}

@@ -1,0 +1,64 @@
+.Internship{
+    &__container{
+        padding: 100px 0;
+        h2{
+            text-align: center;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 130%;
+            color: #1B1D21;
+            margin-bottom: 60px; 
+        }
+    }
+    &__flexContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__image{
+        max-width: 540px;
+        width: 100%;
+        height: auto;
+        &_img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 480px;
+        width: 100%;
+        margin-bottom: 24px;
+        svg{
+            width: 64px;
+            height: 64px;
+            flex-grow: 1;
+            margin-right: 48px;
+        }
+    }
+    &__content{
+        max-width: 375px;
+        h3{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 130%;
+            color: #1B1D21;
+            margin-bottom: 18px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 160%;            
+            color: #505864;
+        }
+    }
+}
