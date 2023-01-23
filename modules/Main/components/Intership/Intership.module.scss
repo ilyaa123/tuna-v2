@@ -19,6 +19,7 @@
         max-width: 540px;
         width: 100%;
         height: auto;
+        padding: 0 2%;
         &_img{
             width: 100%;
             height: auto;
@@ -40,8 +41,9 @@
         svg{
             width: 64px;
             height: 64px;
+            min-width: 56px;
             flex-grow: 1;
-            margin-right: 48px;
+            margin-right: 10%;
         }
     }
     &__content{
@@ -59,6 +61,27 @@
             font-size: 16px;
             line-height: 160%;            
             color: #505864;
+        }
+    }
+
+    //Адаптив под 768px
+    @media (max-width: 768px){
+        &__flexContainer{
+            flex-direction: column-reverse;
+        }
+        &__image{
+            margin-top: 8%;
+        }
+    }
+
+    //Адаптив под 375px
+    @media (max-width: 375px){
+        &__container{
+            h2{font-size: 24px;}
+        }
+        &__content{
+            h3{font-size: 16px;}
+            p{font-size: 14;}
         }
     }
 }
