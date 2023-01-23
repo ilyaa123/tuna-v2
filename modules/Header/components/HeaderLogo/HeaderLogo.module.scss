@@ -1,4 +1,8 @@
 .HeaderLogo{
     max-width: 280px;
     width: 100%;
+    @media (max-width: 910px) {
+        max-width: none;
+        width: auto;
+    }
 }

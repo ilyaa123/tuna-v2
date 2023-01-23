@@ -1,6 +1,11 @@
 .Newsletter{
     padding: 100px 0;
     position: relative;
+    &__container{
+        @media (max-width: 420px) {
+            padding: 0;
+        }
+    }
     &__content{
         max-width: 784px;
         width: 100%;
@@ -8,12 +13,6 @@
         background: #274B90;
         border-radius: 16px;
         padding: 36px 0;
-        @media (max-width: 375px) {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-        }
         h3{
             max-width: 410px;
             width: 100%;
@@ -27,6 +26,10 @@
             color: #FFFFFF;
             margin-bottom: 36px;
         }
+        @media (max-width: 420px) {
+            padding: 36px 20px;
+            border-radius: 0;
+        }
     }
     &__form{
         background: #FFFFFF;
@@ -38,6 +41,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 420px) {
+            flex-direction: column;
+            background-color: inherit;
+        }
     }
     &__input{
         font-size: 14px;
@@ -45,6 +52,13 @@
         letter-spacing: 0.01em;
         color: #8593A7;
         width: 100%;
+        @media (max-width: 420px) {
+            padding: 13px 12px;
+            width: 100%;
+            border: 1px solid #C7D6E3;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
     }
     &__button{
         background: #305DB4;
@@ -52,6 +66,12 @@
         font-size: 14px;
         line-height: 130%;
         letter-spacing: 0.01em;
-        color: #FFFFFF;        
+        color: #FFFFFF;
+        @media (max-width: 420px) {
+            width: 100%;
+            background: #E1EBFF !important;
+            border-radius: 8px !important;
+            color: #274B90 !important;
+        }
     }
 }

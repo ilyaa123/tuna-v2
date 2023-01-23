@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FC } from "react";
 import { Container } from "../../../../components/Container/Container";
 import { Newsletter } from "../../../../components/Newsletter/Newsletter";
-import { Search } from "../../../../components/Search/Search";
+import { Search } from "../Search/Search";
 import { Intership } from "../Intership/Intership";
 import { MainContent } from "../MainContent/MainContent";
 import { MainProject } from "../MainProject/MainProject";
@@ -17,8 +17,8 @@ export const Main:FC = () => {
                 <MainContent />
                 <Intership />
                 <MainProject />
-                <Newsletter />
             </Container>
+            <Newsletter />
         </div>
     )
 }

@@ -1,0 +1,10 @@
+.HeaderNavigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 270px;
+    width: 270px;
+    @media (max-width: 680px) {
+        display: none;
+    }
+}

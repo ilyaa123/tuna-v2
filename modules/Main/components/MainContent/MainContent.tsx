@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import { Search } from "../../../../components/Search/Search";
+import { Search } from "../Search/Search";
 
 import style from './MainConent.module.scss';
 

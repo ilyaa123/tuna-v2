@@ -13,4 +13,11 @@
         font-size: 16px;
         line-height: 24px;
     }
+    @media (max-width: 910px) {
+        max-width: none;
+        width: auto;
+    }
+    @media (max-width: 680px) {
+        display: none;
+    }
 }

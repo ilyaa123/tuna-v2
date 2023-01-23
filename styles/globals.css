@@ -1,6 +1,7 @@
 @import './fonts.css';
 html,
 body {
+  position: relative;
   padding: 0;
   margin: 0;
 }
