@@ -1,5 +1,6 @@
 .Newsletter{
     padding: 100px 0;
+    position: relative;
     &__content{
         max-width: 784px;
         width: 100%;
@@ -46,5 +47,19 @@
         line-height: 130%;
         letter-spacing: 0.01em;
         color: #FFFFFF;        
+    }
+
+    @media (max-width: 375px){
+        &__content{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            border-radius: 0;
+            h3{
+                font-size: 24px;
+            }
+
+        }
     }
 }
