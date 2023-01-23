@@ -8,7 +8,7 @@ export const MainProject:FC = () => {
     return (
         <div className={style.Project__container}>
             <h2>Хочешь работать над проектом?</h2>
-            <ul className={style.Project__lsit}>
+            <ul className={style.Project__list}>
                 <li className={style.Project__item}>
                     <Image className={style.Project__image} width={130} height={130} src="/img/mainproject1.svg" alt="mainproject image"/>
                     <h4>Найди команду</h4>
