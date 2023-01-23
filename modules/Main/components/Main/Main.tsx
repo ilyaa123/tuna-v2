@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import { Container } from "../../../../components/Container";
+import { Container } from "../../../../components/Container/Container";
 import { Newsletter } from "../../../../components/Newsletter/Newsletter";
 import { Search } from "../../../../components/Search/Search";
 import { Intership } from "../Intership/Intership";

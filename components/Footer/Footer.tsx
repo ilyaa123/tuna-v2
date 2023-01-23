@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import { Container } from "../Container";
+import { Container } from "../Container/Container";
 
 import style from './Footer.module.scss';
 

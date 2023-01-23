@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Container } from "../../../../components/Container";
+import { Container } from "../../../../components/Container/Container";
 import { HeaderButtons } from "../HeaderButtons/HeaderButtons";
 import { HeaderLogo } from "../HeaderLogo/HeaderLogo";
 import { Navigation } from "../Navigation/Navigation";

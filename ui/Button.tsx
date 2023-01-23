@@ -9,7 +9,7 @@ interface ButtonProps{
     border?: string;
     fonsSize?: number;
     className?: string;
-    onClick?: (event?: React.MouseEvent<HTMLButtonElement>) => void;  
+    onClick?: (event?: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const Button:FC<ButtonProps> = ({
