@@ -1,0 +1,29 @@
+.AuthMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &__wrapper{
+        display: flex;
+        min-height: calc(100vh - 80px);
+        align-items: center;
+    }
+    h1{
+        margin-bottom: 16px;
+    }
+    &__button{
+        font-size: 16px;
+        border-radius: 8px;
+    }
+    &__link{
+        padding-top: 10px;
+        color: #274B90;
+        font-size: 16px;
+        text-align: center;
+        &_footer{
+            padding: 15vh 10px 10px;
+            color: #274B90;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}

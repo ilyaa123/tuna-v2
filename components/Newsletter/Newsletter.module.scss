@@ -1,6 +1,9 @@
 .Newsletter{
     padding: 100px 0;
     position: relative;
+    @media (max-width: 420px){
+        padding: 100px 0 0 0;
+    }
     &__container{
         @media (max-width: 420px) {
             padding: 0;
@@ -12,7 +15,7 @@
         margin: 0 auto;
         background: #274B90;
         border-radius: 16px;
-        padding: 36px 0;
+        padding: 36px 2%;
         h3{
             max-width: 410px;
             width: 100%;
@@ -52,6 +55,7 @@
         letter-spacing: 0.01em;
         color: #8593A7;
         width: 100%;
+
         @media (max-width: 420px) {
             padding: 13px 12px;
             width: 100%;

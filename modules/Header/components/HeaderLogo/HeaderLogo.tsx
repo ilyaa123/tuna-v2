@@ -9,7 +9,7 @@ export const HeaderLogo:FC = () => {
     return (
         <div className={style.HeaderLogo}>
             <Link href="/">
-                <Image width={92} height={24} src="img/logo.svg" alt="Лого Tuna" />
+                <Image width={92} height={24} src="/img/logo.svg" alt="Лого Tuna" />
             </Link>
         </div>
     )

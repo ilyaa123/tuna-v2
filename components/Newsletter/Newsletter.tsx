@@ -28,7 +28,7 @@ export const Newsletter:FC = () => {
                 <div className={style.Newsletter__content}>
                     <h3>Подпишись на рассылку с новостями о платформе</h3>
                     <form className={style.Newsletter__form} onSubmit={handleOnSubmit}>
-                        <Input className={style.Newsletter__input} onChange={handleOnChange} value={value} placeholder="Введите электронную почту" />
+                        <Input className={style.Newsletter__input} onChange={handleOnChange} value={value} placeholder="Введите электронную почту" type={"text"} />
                         <Button className={style.Newsletter__button} onClick={handleOnClick} padding="9px 36px" text="Подписаться" />
                     </form>
                 </div>

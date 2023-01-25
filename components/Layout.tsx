@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React, { FC } from "react";
+import { Header } from "../modules/Header";
+import { Footer } from "./Footer/Footer";
 
 interface LayoutProps{
     title: string;
@@ -24,7 +26,9 @@ export const Layout:FC<LayoutProps> = (
                 <meta name="keywords" content={keywords} />
                 <title>{title}</title>      
             </Head>
+            <Header/>
             {children}
+            <Footer/>
         </>
     )
 }
