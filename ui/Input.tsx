@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { Dispatch, FC, SetStateAction } from "react";
 
 interface InputProps{
     placeholder?: string;
@@ -6,18 +6,20 @@ interface InputProps{
     backgroundColor?: string;
     border?: string;
     className?: string;
-    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-    value?: string | number
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void | Dispatch<SetStateAction<string>>;
+    value?: string | number;
+    type: string;
 }
 
 export const Input:FC<InputProps> = ({
     placeholder = 'Ввод',
     color = '#8593A7',
     backgroundColor = '#FFFFFF',
-    border = '1px solid #FFFFFF',
+    border,
     className,
     onChange,
-    value
+    value,
+    type
 }) => {
 
     const styles = {
@@ -27,6 +29,6 @@ export const Input:FC<InputProps> = ({
     }
 
     return (
-        <input className={className} style={styles} placeholder={placeholder} onChange={onChange} value={value} />
+        <input className={className} style={styles} placeholder={placeholder} onChange={onChange} value={value} type={type} />
     )
 }

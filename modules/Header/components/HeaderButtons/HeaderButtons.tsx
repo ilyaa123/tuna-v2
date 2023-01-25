@@ -9,11 +9,11 @@ export const HeaderButtons:FC = () => {
     const router = useRouter()
 
     const handleOnAuthorization = () => {
-        router.push('/')
+        router.push('/auth')
     }
 
     const handleOnRegistration = () => {
-        router.push('/')
+        router.push('/auth/reg')
     }
 
     return (

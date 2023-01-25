@@ -10,9 +10,9 @@ const Home:NextPage = () => {
 
   	return (
     	<Layout title="Главная">
-			<Header />
+
 			<Main />
-			<Footer />
+
 		</Layout>
   	)
 }

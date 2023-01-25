@@ -17,7 +17,7 @@ export const Button:FC<ButtonProps> = ({
     padding = '12px 24px',
     backgroundColor = '#305DB4',
     color = '#FFFFFF',
-    border = '1px solid #FFFFFF',
+    border,
     fonsSize = 16,
     children,
     className,

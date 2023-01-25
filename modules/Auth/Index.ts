@@ -1,0 +1,1 @@
+export {AuthMain} from "./components/AuthMain/AuthMain"

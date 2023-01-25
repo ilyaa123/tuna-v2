@@ -29,8 +29,8 @@ export const HeaderMobile:FC = () => {
             <div onClick={handleOnClickOverlay} className={classNames(style.HeaderMobile__overlay, {[style.HeaderMobile__overlay_active]: active})}>
                 <div ref={listRef} className={classNames(style.HeaderMobile__list, {[style.HeaderMobile__list_active]: active})}>
                     <Navigation />
-                    <Button onClick={() => router.push('/reg')} className={style.HeaderMobile__list_registr} text="Регистрация" />
-                    <Button onClick={() => router.push('/')} className={style.HeaderMobile__list_auth} color="#274B90" backgroundColor="#FFFFFF" text="Вход" />
+                    <Button onClick={() => router.push('/auth/reg')} className={style.HeaderMobile__list_registr} text="Регистрация" />
+                    <Button onClick={() => router.push('/auth')} className={style.HeaderMobile__list_auth} color="#274B90" backgroundColor="#FFFFFF" text="Вход" />
                 </div>
             </div>
         </>
