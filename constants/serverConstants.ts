@@ -1,1 +1,1 @@
-export const serverUrl = 'https://tuna-services'
+export const serverUrl = 'https://jsonplaceholder.typicode.com'
