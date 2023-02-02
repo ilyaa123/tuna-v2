@@ -1,7 +1,7 @@
 import { set } from "immer/dist/internal";
 import React, { FC, useState } from "react";
-import { Button } from "../../ui/Button";
-import { Input } from "../../ui/Input";
+import { Button } from "../../ui/Button/Button";
+import { Input } from "../../ui/Input/Input";
 import { Container } from "../Container/Container";
 
 import style from './Newsletter.module.scss';
@@ -29,7 +29,7 @@ export const Newsletter:FC = () => {
                     <h3>Подпишись на рассылку с новостями о платформе</h3>
                     <form className={style.Newsletter__form} onSubmit={handleOnSubmit}>
                         <Input className={style.Newsletter__input} onChange={handleOnChange} value={value} placeholder="Введите электронную почту" type={"text"} />
-                        <Button className={style.Newsletter__button} onClick={handleOnClick} padding="9px 36px" text="Подписаться" />
+                        <Button className={style.Newsletter__button} onClick={handleOnClick} text="Подписаться" />
                     </form>
                 </div>
             </Container>

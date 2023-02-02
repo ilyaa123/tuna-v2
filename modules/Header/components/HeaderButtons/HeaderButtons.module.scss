@@ -4,8 +4,9 @@
     justify-content: space-between;
     max-width: 280px;
     width: 100%;
-    &__auth{
-        margin-right: 40px;
+    .Buttons__auth{
+        color: #274B90;
+        background-color: #FEFEFE;
     }
     button{
         border-radius: 8px;

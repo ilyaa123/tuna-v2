@@ -1,1 +1,1 @@
-export {AuthMain} from "./components/AuthMain/AuthMain"
+export {AuthMain} from "./components/AuthMain/AuthMain";

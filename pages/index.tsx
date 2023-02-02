@@ -10,10 +10,8 @@ const Home:NextPage = () => {
 
   	return (
     	<Layout title="Главная">
-
 			<Main />
-
 		</Layout>
   	)
 }
-export default Home
+export default Home;

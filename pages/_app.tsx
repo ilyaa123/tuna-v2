@@ -1,9 +1,8 @@
-import { GetServerSideProps } from 'next';
-import type { AppProps } from 'next/app'
 import App from 'next/app';
+import type { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
-import { wrapper } from '../redux/store'
-import { userApi } from '../redux/user/userServices';
+import { wrapper } from '../redux/store/store';
+import withReduxSaga from 'next-redux-saga';
 
 import '../styles/globals.css'
 
@@ -19,16 +18,15 @@ const MyApp = ({ Component, ...rest }: AppProps) => {
 
 MyApp.getInitialProps = wrapper.getInitialAppProps((store) => async (context) => {
 
-  store.dispatch(userApi.endpoints.getPosts.initiate(''))
-  
-  await Promise.all(store.dispatch(userApi.util.getRunningQueriesThunk()))
-  
+  store.dispatch({type: 'test'})
+
   return {
     pageProps: {
       ...(await App.getInitialProps(context)).pageProps,
       pathname: context.ctx.pathname
     },
   }
+  
 })
 
-export default MyApp;
+export default withReduxSaga(MyApp)

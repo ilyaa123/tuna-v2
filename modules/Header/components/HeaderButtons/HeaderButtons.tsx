@@ -1,6 +1,8 @@
-import { useRouter } from "next/router";
 import { FC } from "react";
-import { Button } from "../../../../ui/Button";
+
+import { useRouter } from "next/router";
+
+import { Button } from "../../../../ui/Button/Button";
 
 import style from './HeaderButtons.module.scss';
 
@@ -18,8 +20,8 @@ export const HeaderButtons:FC = () => {
 
     return (
         <div className={style.HeaderButtons}>
-            <Button className={style.Button__auth} onClick={handleOnAuthorization} text='Вход' color="#274B90" backgroundColor="FEFEFE"/>
-            <Button className={style.Button__reg} onClick={handleOnRegistration} text='Регистрация' />
+            <Button className={style.Buttons__auth} onClick={handleOnAuthorization} text='Вход'/>
+            <Button className={style.Buttons__reg} onClick={handleOnRegistration} text='Регистрация' />
         </div>
     )
 }

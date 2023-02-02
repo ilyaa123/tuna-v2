@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { FC } from "react";
+
+import Image from "next/image";
 
 import style from './Intership.module.scss';
 
 export const Intership:FC = () => {
-
 
     return (
         <div className={style.Internship__container}>

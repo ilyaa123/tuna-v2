@@ -1,9 +1,11 @@
-import classNames from "classnames";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { FC, useRef, useState } from "react";
+
+import classNames from "classnames";
+
+import { useRouter } from "next/router";
+
 import { Navigation } from "../../../../components/Navigation/Navigation";
-import { Button } from "../../../../ui/Button";
+import { Button } from "../../../../ui/Button/Button";
 
 import style from './HeaderMobile.module.scss';
 
@@ -30,7 +32,7 @@ export const HeaderMobile:FC = () => {
                 <div ref={listRef} className={classNames(style.HeaderMobile__list, {[style.HeaderMobile__list_active]: active})}>
                     <Navigation />
                     <Button onClick={() => router.push('/auth/reg')} className={style.HeaderMobile__list_registr} text="Регистрация" />
-                    <Button onClick={() => router.push('/auth')} className={style.HeaderMobile__list_auth} color="#274B90" backgroundColor="#FFFFFF" text="Вход" />
+                    <Button onClick={() => router.push('/auth')} className={style.HeaderMobile__list_auth} text="Вход" />
                 </div>
             </div>
         </>
