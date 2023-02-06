@@ -1,10 +1,11 @@
 import App from 'next/app';
-import type { AppProps } from 'next/app';
 import { Provider } from 'react-redux';
-import { wrapper } from '../redux/store/store';
-import withReduxSaga from 'next-redux-saga';
+import { END } from 'redux-saga';
+import { SagaStore, wrapper } from '../redux';
 
-import '../styles/globals.css'
+import type { AppProps } from 'next/app';
+
+import '../styles/globals.css';
 
 const MyApp = ({ Component, ...rest }: AppProps) => {
   const { store, props } = wrapper.useWrappedStore(rest);
@@ -17,9 +18,13 @@ const MyApp = ({ Component, ...rest }: AppProps) => {
 }
 
 MyApp.getInitialProps = wrapper.getInitialAppProps((store) => async (context) => {
+  
+  // store.dispatch();
 
-  store.dispatch({type: 'test'})
-
+  
+  // store.dispatch(END);
+  // await (store as SagaStore).sagaTask?.toPromise();
+  
   return {
     pageProps: {
       ...(await App.getInitialProps(context)).pageProps,
@@ -29,4 +34,4 @@ MyApp.getInitialProps = wrapper.getInitialAppProps((store) => async (context) =>
   
 })
 
-export default withReduxSaga(MyApp)
+export default MyApp
