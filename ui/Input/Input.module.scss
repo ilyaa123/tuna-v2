@@ -1,4 +1,9 @@
 .Input{
-    color: #8593A7;
+    color: #1B1D21;
     background-color: #FFFFFF;
+    input::placeholder {
+        color: #8593A7;
+        font-size: 14px;
+        opacity: 1;
+      }
 }

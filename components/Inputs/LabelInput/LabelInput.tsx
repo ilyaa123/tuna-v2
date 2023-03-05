@@ -1,10 +1,10 @@
 import { ChangeEventHandler, FC } from "react";
 
-import { Input } from "../../ui/Input/Input";
+import { Input } from "../../../ui/Input/Input";
 
 import style from "./LabelInput.module.scss"
 
-interface AuthInputProps{
+interface LabelInputProps{
     title?: string;
     type: string;
     placeholder?: string;
@@ -12,9 +12,9 @@ interface AuthInputProps{
     value?: string;
 }
 
-export const LabelInput:FC<AuthInputProps> = ({title, type, placeholder, onChange, value}) =>{
+export const LabelInput:FC<LabelInputProps> = ({title, type, placeholder, onChange, value}) =>{
     return(
-    <label className={style.AuthInput}>
+    <label className={style.LabelInput}>
         {
             title && (<p>{title}</p>)
         }

@@ -7,6 +7,7 @@ interface InputProps{
     border?: string;
     className?: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
+    onBlur?: ChangeEventHandler<HTMLInputElement>
     value?: string | number;
     type: string;
 }
@@ -15,12 +16,12 @@ export const Input:FC<InputProps> = ({
     placeholder = 'Ввод',
     className,
     onChange,
+    onBlur,
     value,
     type
 }) => {
-
-
+    
     return (
-        <input className={className + ' ' + style.Input} placeholder={placeholder} onChange={onChange} value={value} type={type} />
+        <input className={className + ' ' + style.Input} placeholder={placeholder} onChange={onChange} onBlur={onBlur} value={value} type={type} />
     )
 }
