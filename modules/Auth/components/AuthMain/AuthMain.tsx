@@ -18,7 +18,8 @@ export const AuthMain:FC = () => {
 
     }
 
-    const handleOnClick = () => {
+    const handleOnClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent> | undefined) => {
+        event?.preventDefault();
         router.push('/profile')
     }
 

@@ -4,17 +4,17 @@ import { Container } from "../../components/Container/Container";
 import { Layout } from "../../components/Layout";
 import { LayoutPages } from "../../components/LayoutPages/LayoutPages";
 
-import { Profile } from "../../modules/Profile"
+import { Resume } from "../../modules/Resume"
 
-const ProfilePage:NextPage = () => {
+const ResumePage:NextPage = () => {
     return (
         <Layout title="Профиль">
             <Container>
                 <LayoutPages>
-                    <Profile />
+                    <Resume />
                 </LayoutPages>
             </Container>
         </Layout>
     )
 }
-export default ProfilePage
+export default ResumePage
