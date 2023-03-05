@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import { Button } from "../../../../ui/Button/Button";
-import { LabelInput } from "../../../../components/AuthInput/LabelInput";
+import { LabelInput } from "../../../../components/Inputs/LabelInput/LabelInput";
 import { AuthContainer } from "../../../../components/AuthContainer/AuthContainer";
 import Link from "next/link";
 
@@ -32,10 +32,10 @@ export const AuthMain:FC = () => {
                        <LabelInput onChange={(e) => setPassw(e.target.value)} value={passw} title="Пароль" placeholder="Введите пароль" type="password"/>
                     </div>
                     <Button onClick={handleOnClick} className={style.AuthMain__button} text="Войти" />
-                    <Link href="#" className={style.AuthMain__link}>Забыли пароль?</Link>
-                    <Link href="/auth/reg" className={style.AuthMain__link_footer}>Ещё нет аккаунта?</Link>
                 </div>
             </AuthContainer>
+            <Link href="#" className={style.AuthMain__link}>Забыли пароль?</Link>
+            <Link href="/auth/reg" className={style.AuthMain__link_footer}>Ещё нет аккаунта?</Link>
         </div>
     )
 }

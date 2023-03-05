@@ -1,8 +1,9 @@
-.AuthMain{
+.RegMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     &__wrapper{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         min-height: calc(100vh - 80px);
         align-items: center;
     }
@@ -11,17 +12,16 @@
         margin-bottom: 16px;
     }
     &__button{
-        width: 100%;
         font-size: 16px;
         border-radius: 8px;
     }
     &__link{
-        margin: 10px 0px 15vh 0px;
+        padding-top: 10px;
         color: #274B90;
         font-size: 16px;
         text-align: center;
         &_footer{
-            margin-top: 15vh;
+            padding: 15vh 10px 10px;
             color: #274B90;
             font-size: 16px;
             text-align: center;
